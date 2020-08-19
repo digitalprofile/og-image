@@ -52,8 +52,8 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
     const defaultImage = theme === 'light'
-        ? 'https://westryve.com/static/img/stryveLogo.png'
-        : 'https://westryve.com/static/img/stryve-logo-white.png';
+        ? 'https://westryve.com/img/stryveLogo.png'
+        : 'https://westryve.com/img/stryve-logo-white.png';
 
     if (!images || !images[0]) {
         return [defaultImage];
