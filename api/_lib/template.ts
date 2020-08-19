@@ -13,11 +13,11 @@ const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('ba
 
 function getCss(theme: string, fontSize: string) {
     let background = 'white';
-    let foreground = 'black';
+    let foreground = '#282d39';
     let radial = 'lightgray';
 
     if (theme === 'dark') {
-        background = 'black';
+        background = '#282d39';
         foreground = 'white';
         radial = 'dimgray';
     }
@@ -93,7 +93,7 @@ function getCss(theme: string, fontSize: string) {
         margin: 0 .05em 0 .1em;
         vertical-align: -0.1em;
     }
-    
+
     .heading {
         font-family: 'Inter', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};
